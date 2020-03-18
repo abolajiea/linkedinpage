@@ -8,72 +8,229 @@
 </head>
 
 <body>
-  <div class="container">
-<div class="edit-intro">
-<h1>Edit Intro </h1>
-</div>
+            <div class="container">
+                <div class="edit-intro">
+                <h1>Edit Intro </h1>
+            </div>
 
-<form>
-    <div class="form-row">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="First name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Last name">
-        <label class="form-check-label" for="exampleCheck1">Add Former Name</label>
-      </div>
-    </div>
-  </form>
+                <form>
+                    <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                        <a class="btn btn-info" data-toggle="collapse" href="#collapse-former-name" role="button" aria-expanded="false" aria-controls="collapseExample">
 
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Headline</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</form>
+                            Add former name
+                        </a>
+                    </div>
+                    </div>
+                </form>
 
-<form>
-<div class="Current-position">
-    <select class="form-control">
-        <option>Current Position</option>
-      </select>
-      <label class="form-check-label" for="exampleCheck1">Add New Position</label>
-</div>
-</form>
-
-<div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      show education in my intro
-    </label>
-  </div><br>
-
-  <div class="Current-position">
-    <select class="form-control">
-        <option>Education</option>
-      </select>
-      <label class="form-check-label" for="exampleCheck1">Add New Education</label>
-</div><br>
-<form>
-    <div class="form-group">
-      <label for="formGroupExampleInput">Country/Region</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input Country">
-    </div><br>
-    <form>
+        <form>
         <div class="form-group">
-          <label for="formGroupExampleInput">Locations in this Country/Region</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input Location">
-        </div><br>
+            <label for="exampleFormControlTextarea1">Headline</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        </form>
+
+        <form>
         <div class="Current-position">
             <select class="form-control">
-                <option>Industry</option>
-              </select>
+                <option>Current Position</option>
+            </select>
+            <a class="btn btn-info" data-toggle="collapse" href="#collapse-former-name" role="button" aria-expanded="false" aria-controls="collapseExample">
+
+                Add New Position
+            </a>
         </div>
-<div class="Contact info"><br>
-<h5>Contact Info</h5><br>
+        </form>
 
-<h6>Profile URL, Email, WeChat ID</h6>
-</div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+            show education in my intro
+            </label>
+        </div><br>
+
+        <div class="Current-position">
+            <select class="form-control">
+                <option>Education</option>
+            </select>
+            <a class="btn btn-info" data-toggle="collapse" href="#collapse-former-name" role="button" aria-expanded="false" aria-controls="collapseExample">
+
+                Add New Education
+            </a>
+        </div><br>
+        <form>
+            <div class="form-group">
+            <label for="formGroupExampleInput">Country/Region</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input Country">
+            </div><br>
+            <form>
+                <div class="form-group">
+                <label for="formGroupExampleInput">Locations in this Country/Region</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input Location">
+                </div><br>
+                <div class="Current-position">
+                    <select class="form-control">
+                        <option>Industry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+
+                    <label for="contact-info">Contact Info</label>
+
+                    <input type="text" class="form-control" id="contact-info" placeholder="Profile URL, Phone, Email, WeChat ID">
+
+                </div>
+
+                <div class="edit-intro">
+                    <h1>Edit Experience</h1>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="job-title">Title</label>
+
+                        <input type="text" class="form-control" id="job-title" placeholder="Select Title">
+
+                    </div>
+                    <div class="form-group">
+
+                        <label for="employment-type">Employment Type</label>
+
+                        <select id="employment-type" class="form-control">
+
+                        <option>-</option>
+
+                        <option>Full-time</option>
+
+                        <option>Part-time</option>
+
+                        <option>Self-employed</option>
+
+                        <option>Freelance</option>
+
+                        <option>Contract</option>
+
+                        <option>Internship</option>
+
+                        <option>Apprenticeship</option>
+
+                        </select>
+
+                    </div>
+
+                        <div class="form-group">
+
+                            <label for="company">Company</label>
+
+                            <input type="text" class="form-control" id="company" placeholder="Select Company">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for="company">Location</label>
+        
+                                <input type="text" class="form-control" id="company" placeholder="Select Location">
+        
+                                </div>         
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-6">
+
+                            <label> Start Date</label>          <label=>End Date</label>
+
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+
+                                        <select class="form-control">
+
+                                            <option>Month</option>
+
+                                            <option>January</option>
+
+                                            <option>February</option>
+
+                                            <option>March</option>
+
+                                            <option>April</option>
+
+                                            <option>May</option>
+
+                                            <option>June</option>
+
+                                            <option>July</option>                                                
+
+                                            <option>August</option>                                                
+
+                                            <option>September</option>                                                
+
+                                            <option>October</option>                                                
+
+                                            <option>November</option>                                                
+
+                                            <option>December</option>                                                
+
+                                        </select>
+
+                                    </div>
+
+                                    <div class="col-sm-6git">
+                                        <select class="form-control">
+                                            <option>Year</option>
+
+                                            <option>2020</option>
+
+                                            <option>2019</option>
+
+                                            <option>2018</option>
+
+                                            <option>2017</option>
+
+                                            <option>2016</option>
+
+                                            <option>2015</option>
+
+                                            <option>2014</option>                                                
+
+                                            <option>2013</option>                                                
+
+                                            <option>2012</option>                                                
+
+                                            <option>2011</option>                                                
+
+                                            <option>2010</option>                                                
+
+                                            <option>2009</option>                                                
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                        </div> 
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Default checkbox
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                            <label class="form-check-label" for="defaultCheck2">
+                              Disabled checkbox
+                            </label>
+                          </div>
+
+
+                        
 
 
 
@@ -89,11 +246,7 @@
 
 
 
-
-
-
-
-  </div>
+        </div>
 
 
 
